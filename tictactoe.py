@@ -1,5 +1,18 @@
 # Tic-Tac-Toe
 
+import random
+
+def drawBoard(board):
+    print("|") + board[1] + ("|") + board[2] + ("|") + board[3]
+    print("|") + board[4] + ("|") + board[5] + ("|") + board[6]
+    print("|") + board[7] + ("|") + board[8] + ("|") + board[9]
+
+    "\nCurrent game board:\n\n|" + self.position_list[0] + "|" + self.position_list[1] + "|" + \
+           self.position_list[2] + "|\n|" + self.position_list[
+               3] + "|" + self.position_list[4] + "|" + self.position_list[5] + "|\n|" + self.position_list[6] + "|" + \
+           self.position_list[7] + "|" + self.position_list[
+               8] + "|\n"
+
 # print("Welcome to a text-based version of Tic-Tac-Toe!\n")
 
 # player1 = input("Please enter the name of Player One: ")
