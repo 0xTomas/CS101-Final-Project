@@ -61,7 +61,7 @@ class Game:
            if self.position_list[combination[0]] and self.position_list[combination[1]] and self.position_list[combination[2]] == "O":
                print("Player 2 wins.")
                return True
-        return False
+       return False
 
 
 game1 = Game()

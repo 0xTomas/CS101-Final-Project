@@ -7,7 +7,7 @@ def drawBoard(board):
 
     # "board" is a list of 10 strings representing the board (ignore index 0)
     print('   |   |')
-    print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
+    print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
     print('   |   |')
     print('-----------')
     print('   |   |')
@@ -15,7 +15,7 @@ def drawBoard(board):
     print('   |   |')
     print('-----------')
     print('   |   |')
-    print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
+    print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
     print('   |   |')
 
 def inputPlayerLetter():
@@ -110,12 +110,12 @@ def getComputerMove(board, computerLetter):
                 return i
 
     # Check if the player could win on his next move, and block them.
-    for i in range(1, 10):
-        copy = getBoardCopy(board)
-        if isSpaceFree(copy, i):
-            makeMove(copy, playerLetter, i)
-            if isWinner(copy, playerLetter):
-                return i
+    #for i in range(1, 10):
+        #copy = getBoardCopy(board)
+        #if isSpaceFree(copy, i):
+            #makeMove(copy, playerLetter, i)
+            #if isWinner(copy, playerLetter):
+                #return i
 
     # Try to take one of the corners, if they are free.
     move = chooseRandomMoveFromList(board, [1, 3, 7, 9])
